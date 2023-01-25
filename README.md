@@ -1,5 +1,5 @@
 # ExerciseApp
-A web-app developed on MERN Stack
+A web-app developed to track your exercises.
 
 TECH STACK:
 1) Express Backend
