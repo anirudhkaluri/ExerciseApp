@@ -1,0 +1,33 @@
+ <div className="add-new">
+                <h2>Add new exercise to {category} category</h2>
+                <form onSubmit={handleSubmit}>
+                    <label>Exercise Name:</label>
+                    <input 
+                        type="text"
+                        required
+                        value={name}
+                        onChange={(e)=>setName(e.target.value)}
+                    />
+                    <label>Number of Sets:</label>
+                    <input
+                        type="number"
+                        required
+                        value={sets}
+                        onChange={(e)=>setSets(e.target.value)}
+                    />
+                    <label>Highest Weight:</label>
+                    <input
+                        type="number"
+                        required
+                        value={weight}
+                        onChange={(e)=>setWeight(e.target.value)}
+                    />
+                    <label>Notes:</label>
+                    <textarea>
+                        required
+                        value={notes}
+                        onChange={(e)=>setNotes(e.target.value)}
+                    </textarea>
+                    <button>Submit</button>
+                </form>   
+            </div>

@@ -1,0 +1,145 @@
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+
+/*for navbar*/
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.navbar h1 {
+  color: #f1356d;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar a:hover {
+  color: #f1356d;
+}
+.navbar button{
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar button:hover{
+  color: #f1356d;
+}
+/* for forms' parent section */
+form{
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+form label {
+  text-align: left;
+  display: block;
+}
+form h2 {
+  font-size: 20px;
+  color:black;
+  margin-bottom: 30px;
+}
+form input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+form button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.dashboard-list{
+  padding: 20px;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+/*for category list or catlist route*/
+.dashboard-list h3{
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+  
+}
+.dashboard-list h3:hover{
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.dashboard-list a{
+  text-decoration: none;
+}
+
+/*listing exercises in ExList component in the SpecificCat page*/
+.list-exercises h2{
+  font-size: 20px;
+  color:black;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.list-exercises{
+   padding: 20px;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.ex-details{
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.ex-details:hover{
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.ex-details h3{
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+.ex-details .modify-button{
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.ex-details .delete-button{
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  margin: 0px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}

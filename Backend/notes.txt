@@ -1,0 +1,39 @@
+
+               console.log('CredentialResponse object is',credentialresponse);
+                console.log('Credential field is:',credentialresponse.credential);
+                var responsePayload=parseJWT(credentialresponse.credential);
+                console.log('response payload is',responsePayload);
+                console.log("ID: " + responsePayload.sub);
+                console.log('Full Name: ' + responsePayload.name);
+                console.log('Given Name: ' + responsePayload.given_name);
+                console.log('Family Name: ' + responsePayload.family_name);
+                console.log("Image URL: " + responsePayload.picture);
+                console.log("Email: " + responsePayload.email);*/
+            }
+            
+            function parseJWT(token) {
+
+                var segments = token.toString().split('.');
+                console.log(segments);
+
+                if (segments.length !== 3) {
+                throw new Error('Not enough or too many segments');
+                }
+
+                // All segment should be base64
+                var headerSeg = segments[0];
+                var payloadSeg = segments[1];
+                var signatureSeg = segments[2];
+
+                // base64 decode and parse JSON
+                var header = JSON.parse(atob(headerSeg));
+                var payload = JSON.parse(atob(payloadSeg));
+
+                return payload;
+
+            }
+
+
+            /*
+                */
+              //validating token at: https://developers.google.com/identity/gsi/web/guides/verify-google-id-token
