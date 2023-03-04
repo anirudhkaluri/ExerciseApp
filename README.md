@@ -2,7 +2,7 @@
 A web-app developed to track your exercises.
 
 TECH STACK:
-1) Express Backend
+1) Express Backend/Spring Data
 2) React Frontend
 3) MongoDB Database
 
